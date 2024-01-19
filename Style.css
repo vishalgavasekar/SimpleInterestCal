@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: grey;
+  font-family: Verdana, sans-serif;
+  padding: 10px;
+}
+
+.maindiv {
+  background-color: #f0f0f0; /* Light grey background */
+  color: black;
+  width: 90%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease-in-out;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.maindiv:hover {
+  background-color: #e0e0e0; /* Darker grey on hover */
+}
+
+#mainform {
+  line-height: 30px;
+  display: table;
+  margin: auto;
+}
+
+#mainform p {
+  display: table-row;
+}
+
+#mainform label {
+  display: table-cell;
+}
+
+.result {
+  display: none;
+}
+
+footer {
+  padding: 10px;
+  padding-top: 10px;
+  text-align: center;
+  color: #999;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: #fff; /* Text color change on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
